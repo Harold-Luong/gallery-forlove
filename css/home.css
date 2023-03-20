@@ -96,3 +96,8 @@ ul {
 .image-gallery img:hover {
     opacity: 1;
 }
+
+/* model */
+.showImg {
+    display: none;
+}

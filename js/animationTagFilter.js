@@ -1,7 +1,6 @@
-$(function () {
-  $("li").addClass("tile scale-anm all");
-  let selectedClass = "";
+function animationClickBtn() {
   $(".nav-filter").click(function () {
+    let selectedClass = "";
     $("button").removeClass("btn-nav-active");
     $(this).addClass("btn-nav-active");
     selectedClass = $(this).attr("data-rel");
@@ -17,4 +16,5 @@ $(function () {
       $("#portfolio").fadeTo(250, 1);
     }, 350);
   });
-});
+}
+export { animationClickBtn };
