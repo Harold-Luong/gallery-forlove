@@ -1,8 +1,9 @@
 import imageGallery from "../asset/data.js";
-$(() => {
-  // const modal = $(
-  //   '<div class="modal fade" id="showInforModal" tabindex="-1" role="dialog" aria-hidden="true">'
-  // );
+$(document).ready(function () {
+  renderModal();
+});
+
+function renderModal() {
   const modal = $("#showInforModal");
   const modalDialog = $(
     '<div class="modal-dialog modal-dialog-centered modal-xl">'
@@ -41,4 +42,4 @@ $(() => {
     modalDescription.text(item.description);
     modalTag.text(item.title);
   });
-});
+}
